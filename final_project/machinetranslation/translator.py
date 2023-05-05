@@ -43,3 +43,9 @@ def french_to_english(french_text):
         source='fr',
         target='en').get_result()
     return english_text['translations'][0]['translation']
+
+
+english_text = "Hello, how are you?"
+french_text = english_to_french(english_text)
+print(french_to_english("C'est dur hein?"))
+print(french_text)
